@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinacoteca Municipal | Cultura Itanhaém</title>
+    <link rel="icon" href="cultura.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="cultura.jpeg">
+    <meta property="og:title" content="Pinacoteca Municipal | Cultura Itanhaém">
+    <meta property="og:description" content="Secretaria de Cultura e Economia Criativa do município de Itanhaém do estado de São Paulo">
+    <meta property="og:image" content="https://gabriel0138.github.io/Secretaria_de_Cultura/cultura.jpeg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-fixed bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100 transition-all duration-300">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-2 sm:space-x-3 cursor-pointer">
+                    <img src="cultura.jpeg" alt="Brasão Cultura" class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl shadow-lg shadow-blue-900/20 object-cover">
+                    <div>
+                        <h1 class="text-base sm:text-lg md:text-xl font-extrabold text-blue-900 leading-tight font-heading tracking-tight">Secretaria de Cultura e Economia Criativa</h1>
+                        <p class="text-[10px] sm:text-xs text-gray-500 font-semibold tracking-wider">PREFEITURA MUNICIPAL DE ITANHAÉM</p>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-900 font-medium transition">Início</a>
+                    <a href="agenda.html" class="nav-link text-gray-600 hover:text-blue-900 font-medium transition">Agenda Cultural</a>
+                    
+                    <div class="relative dropdown">
+                        <button class="nav-link text-gray-600 hover:text-blue-900 font-medium transition inline-flex items-center">
+                            Espaços <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-lg mt-2 py-2 w-48 border border-gray-100 z-50">
+                            <a href="oficina-cultura.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Gabinete de Leitura</a>
+                            <a href="artistas.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Casa do Artesão</a>
+                            <a href="casa-musica.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Casa de Música</a>
+                            <a href="casa-danca.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Casa da Dança</a>
+                            <a href="casa-cultura-suarao.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Casa de Cultura Suarão</a>
+                            <a href="teatro-eva-wilma.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Teatro Eva Wilma</a>
+                            <a href="biblioteca-municipal.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Biblioteca Municipal</a>
+                            <a href="pinacoteca.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Pinacoteca Municipal</a>
+                        </div>
+                    </div>
+
+                    <div class="relative dropdown">
+                        <button class="nav-link text-gray-600 hover:text-blue-900 font-medium transition inline-flex items-center">
+                            Projetos <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-lg mt-2 py-2 w-48 border border-gray-100 z-50">
+                            <a href="projeto-guri.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Projeto Guri</a>
+                            <a href="pontos-cultura.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Ponto MIS</a>
+                        </div>
+                    </div>
+
+                    <a href="https://forms.gle/GjQ2LZG2HpwT55jLA" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2.5 px-5 rounded-lg transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Cadastro de Artistas</a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full z-40">
+            <div class="px-4 pt-3 pb-4 space-y-2">
+                <a href="index.html" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-blue-50 transition">Início</a>
+                
+                <div class="border-t border-gray-50 pt-2 mt-2">
+                    <button class="mobile-dropdown-btn w-full flex justify-between items-center px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-blue-50 transition">
+                        <span>Espaços</span>
+                        <i class="mobile-dropdown-icon fas fa-chevron-down text-xs transition-transform duration-200"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden mt-1 space-y-1 pl-6">
+                        <a href="oficina-cultura.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Gabinete de Leitura</a>
+                        <a href="artistas.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Casa do Artesão</a>
+                        <a href="casa-musica.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Casa de Música</a>
+                        <a href="casa-danca.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Casa da Dança</a>
+                        <a href="casa-cultura-suarao.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Casa de Cultura Suarão</a>
+                        <a href="teatro-eva-wilma.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Teatro Eva Wilma</a>
+                        <a href="biblioteca-municipal.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Biblioteca Municipal</a>
+                        <a href="pinacoteca.html" class="block px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-900 hover:bg-blue-50 transition">Pinacoteca Municipal</a>
+                    </div>
+                </div>
+
+                <div class="pt-4 pb-1">
+                    <a href="https://forms.gle/GjQ2LZG2HpwT55jLA" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition shadow-md">Cadastro de Artistas</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow fade-in">
+        <div class="bg-blue-900 py-16 text-center text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading relative z-10 px-4">Pinacoteca Municipal</h2>
+            <p class="text-blue-200 mt-2 relative z-10">Preservação, exposição e estímulo às artes visuais.</p>
+        </div>
+
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="pinacoteca.jpg" onerror="this.src='https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-4.0.3'" class="rounded-3xl shadow-2xl w-full h-auto object-cover" alt="Pinacoteca Municipal">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-blue-900 mb-6 font-heading">Sobre a Pinacoteca</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Inaugurada em 22 de abril de 2017, a <strong>Pinacoteca Municipal</strong> está localizada no Centro Histórico, exatamente no terreno onde viveu Benedicto Calixto de Jesus, o famoso pintor nascido em Itanhaém.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        O espaço cultural é totalmente climatizado e acessível, sendo dedicado a exposições, cursos, oficinas de artes plásticas e produção artística. Além disso, a Pinacoteca atua como salvaguarda de parte do acervo histórico do município e da valorização dos artistas locais.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 mb-6">
+                        <h4 class="font-bold text-blue-900 mb-3"><i class="fas fa-palette mr-2"></i> Atividades e Estrutura</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Exposições artísticas rotativas</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Oficinas voltadas às artes plásticas</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Bate-papos e eventos literários</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Acervo de artistas de Itanhaém</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center text-gray-600 mb-4 bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-100">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
+                        <span><strong>Endereço:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Praca+Carlos+Botelho+48+Centro+Itanhaem" target="_blank" class="hover:text-blue-600 hover:underline">Praça Carlos Botelho, 48 - Centro Histórico</a></span>
+                    </div>
+
+                    <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-100">
+                        <i class="fas fa-clock text-blue-500 mr-3 text-xl"></i>
+                        <span><strong>Horário:</strong> Ter a Sex (09h às 17h) | Sáb e Dom (11h às 17h)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-dropdown-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const menu = this.nextElementSibling;
+                document.querySelectorAll('.mobile-dropdown-menu').forEach(m => m.classList.add('hidden'));
+                if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teatro Eva Wilma | Cultura Itanhaém</title>
+    <title>Biblioteca Municipal | Cultura Itanhaém</title>
     <link rel="icon" href="cultura.jpeg" type="image/jpeg">
     <link rel="apple-touch-icon" href="cultura.jpeg">
-    <meta property="og:title" content="Teatro Eva Wilma | Cultura Itanhaém">
+    <meta property="og:title" content="Biblioteca Municipal | Cultura Itanhaém">
     <meta property="og:description" content="Secretaria de Cultura e Economia Criativa do município de Itanhaém do estado de São Paulo">
-    <meta property="og:image" content="https://gabriel0138.github.io/Secretaria_de_Cultura/cultura.jpeg
+    <meta property="og:image" content="https://gabriel0138.github.io/Secretaria_de_Cultura/cultura.jpeg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
     <meta property="og:image:height" content="800">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -119,19 +121,20 @@
     <main class="flex-grow fade-in">
         <div class="bg-blue-900 py-16 text-center text-white relative overflow-hidden">
             <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading relative z-10 px-4">Teatro Eva Wilma</h2>
-            <p class="text-blue-200 mt-2 relative z-10">O principal palco da arte, cultura e educação em Itanhaém.</p>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-heading relative z-10 px-4">Biblioteca Municipal Poeta Paulo Bomfim</h2>
+            <p class="text-blue-200 mt-2 relative z-10">Conhecimento, preservação histórica e incentivo à leitura.</p>
         </div>
 
         <div class="container mx-auto px-4 py-12">
             <div class="bg-white/80 backdrop-blur-md border border-white/40 rounded-3xl shadow-xl shadow-blue-900/5 overflow-hidden">
                 <div class="md:flex">
                     <div class="md:w-1/2 h-64 md:h-auto min-h-[300px] relative overflow-hidden">
-                        <!-- Início do Carrossel do Teatro -->
-                        <div id="teatro-carousel" class="absolute inset-0 w-full h-full z-0 group">
-                            <img src="teatro1.webp" alt="Teatro Eva Wilma 1" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                            <img src="teatro3.webp" alt="Teatro Eva Wilma 3" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
-                            <img src="teatro4.webp" alt="Teatro Eva Wilma 4" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                        <!-- Início do Carrossel da Biblioteca -->
+                        <div id="biblioteca-carousel" class="absolute inset-0 w-full h-full z-0 group">
+                            <img src="bibli1.webp" alt="Biblioteca Municipal" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                            <img src="bibli2.webp" alt="Biblioteca Municipal 2" onerror="this.src='bibli1.webp'" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="bibli3.webp" alt="Biblioteca Municipal 3" onerror="this.src='bibli1.webp'" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="bibli4.webp" alt="Biblioteca Municipal 4" onerror="this.src='bibli1.webp'" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
                             
                             <!-- Controles Manuais -->
                             <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 focus:outline-none" aria-label="Foto Anterior">
@@ -141,59 +144,36 @@
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
-                        <!-- Fim do Carrossel do Teatro -->
                     </div>
                     <div class="md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
-                        <h3 class="text-2xl font-bold text-blue-900 mb-4 font-heading">Sobre o Teatro</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">
-                            Localizado no coração da cidade (anexo ao Centro de Capacitação do Professor), o <strong>Teatro Eva Wilma</strong> é o cenário central das maiores produções culturais de Itanhaém. Recentemente, o espaço passou por reformas estruturais, incluindo melhorias vitais de acessibilidade (como rampas de acesso) e manutenção de refrigeração.
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4 font-heading">Sobre a Biblioteca</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            A <strong>Biblioteca Municipal Poeta Paulo Bomfim</strong> foi fundada em 14 de dezembro de 1964. Em 1999, ganhou sede própria ocupando o prédio histórico do início do século XX onde funcionou a antiga Prefeitura de Itanhaém. O espaço oferece suporte a atividades pedagógicas, assistência a pesquisas e abriga eventos literários.
                         </p>
                         
-                        <div class="bg-blue-50 p-5 rounded-2xl mb-6 border border-blue-100">
-                            <h4 class="font-bold text-blue-900 mb-2 flex items-center"><i class="fas fa-file-contract mr-2 text-yellow-500"></i> Novo Decreto de Utilização</h4>
-                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                                A nova fase do Teatro é pautada pelo <strong>Decreto Nº 4.755/2026</strong>. A medida institui o preço público e democratiza o acesso ao equipamento cultural, prevendo isenções para produções locais, projetos sociais e eventos gratuitos, ao passo que estabelece contrapartidas para uso corporativo.
-                            </p>
-                            <a href="Dec-4755.pdf" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-xl transition shadow-md shadow-blue-600/20 transform hover:-translate-y-0.5">
-                                <i class="fas fa-download mr-2"></i> Baixar Decreto e Regulamento
-                            </a>
+                        <h4 class="font-bold text-gray-800 mb-3">O Acervo:</h4>
+                        <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                            A coleção conta com aproximadamente <strong>50.000 volumes</strong>, muitos adquiridos através de doações de intelectuais brasileiros, incluindo o patrono Paulo Bomfim. O acervo dispõe de livros, mapas, manuscritos, revistas, hemeroteca, gibiteca, além de obras adaptadas (audiobooks e livros para deficientes visuais).
+                        </p>
+
+                        <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg mb-4 shadow-sm border border-gray-100">
+                            <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
+                            <span><strong>Endereço:</strong> <a href="https://www.google.com/maps/search/?api=1&query=Rua+Cunha+Moreira+71+Centro+Itanhaem" target="_blank" class="hover:text-blue-600 hover:underline">Rua Cunha Moreira, 71 - Centro</a></span>
+                        </div>
+
+                        <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg mb-4 shadow-sm border border-gray-100">
+                            <i class="fas fa-phone text-green-500 mr-3 text-xl"></i>
+                            <span><strong>Telefone:</strong> <a href="tel:1334261477" class="hover:text-blue-600 hover:underline">(13) 3426-1477</a></span>
+                        </div>
+
+                        <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg mb-4 shadow-sm border border-gray-100">
+                            <i class="fas fa-envelope text-yellow-500 mr-3 text-xl"></i>
+                            <span><strong>Email:</strong> <a href="mailto:biblioteca@itanhaem.sp.gov.br" class="hover:text-blue-600 hover:underline">biblioteca@itanhaem.sp.gov.br</a></span>
                         </div>
                         
-                        <h4 class="font-bold text-gray-800 mb-3">Destaques e Eventos:</h4>
-                        <ul class="space-y-4 text-gray-600 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-theater-masks text-yellow-500 mr-3 mt-1 text-xl"></i>
-                                <div>
-                                    <strong class="text-blue-900">Festival de Arte da Educação</strong>
-                                    <p class="text-sm mt-1">Palco de apresentações que mudam vidas. O teatro recebe centenas de alunos da rede municipal que provam que a união de teatro e educação transforma a sala de aula e promove o protagonismo jovem.</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-child text-yellow-500 mr-3 mt-1 text-xl"></i>
-                                <div>
-                                    <strong class="text-blue-900">Educação Lúdica e Folclore</strong>
-                                    <p class="text-sm mt-1">Recentemente, cerca de 500 alunos se encantaram com peças infantis como "Boi Viramundo", atestando o Teatro Eva Wilma como uma poderosa ferramenta pedagógica para a transmissão das tradições culturais.</p>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg">
-                            <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
-                            <span><strong>Localização:</strong> Av. Condessa de Vimieiros, 1131 - Centro</span>
-                        </div>
-
-                        <div class="mt-6 bg-white border border-gray-100 p-5 rounded-2xl shadow-sm">
-                            <h4 class="font-bold text-blue-900 mb-2"><i class="fas fa-info-circle text-blue-500 mr-2"></i> Solicitação de Uso e Contato</h4>
-                            <p class="text-gray-600 text-sm mb-3 leading-relaxed">
-                                Para dúvidas ou informações adicionais, entre em contato através do telefone ou e-mail da <strong>Secretaria de Cultura</strong>. 
-                            </p>
-                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
-                                A solicitação formal para a utilização do espaço deve ser realizada obrigatoriamente mediante abertura de requerimento no <strong>Setor de Protocolo</strong> da Prefeitura Municipal.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4 text-sm font-medium text-gray-700">
-                                <a href="tel:1334275573" class="flex items-center hover:text-blue-600 transition"><i class="fas fa-phone mr-2 text-green-500"></i> (13) 3427-5573</a>
-                                <a href="mailto:cultura@itanhaem.sp.gov.br" class="flex items-center hover:text-blue-600 transition"><i class="fas fa-envelope mr-2 text-yellow-500"></i> cultura@itanhaem.sp.gov.br</a>
-                            </div>
+                        <div class="flex items-center text-gray-600 bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fas fa-clock text-blue-500 mr-3 text-xl"></i>
+                            <span><strong>Funcionamento:</strong> Segunda a Sexta, das 08h às 17h</span>
                         </div>
                     </div>
                 </div>
@@ -208,22 +188,14 @@
             <div>
                 <h3 class="text-xl font-bold mb-4 font-heading">Secretaria de Cultura</h3>
                 <p class="text-blue-200 text-sm mb-4">Preservando a história e fomentando o futuro da segunda cidade mais antiga do Brasil.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-blue-300"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="hover:text-blue-300"><i class="fab fa-instagram fa-lg"></i></a>
-                </div>
             </div>
             <div>
                 <h4 class="font-bold mb-4 text-yellow-400">Atendimento</h4>
                 <ul class="space-y-2 text-blue-200 text-sm">
-                    <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Antonio+Olivio+de+Araujo+5+Centro+Itanhaem" target="_blank" class="hover:text-white transition"><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> Rua Antônio Olívio de Araújo, 5 - Centro</a></li>
-                    <li><a href="tel:1334275573" class="hover:text-white transition"><i class="fas fa-phone mr-2 text-yellow-500"></i> (13) 3427-5573</a></li>
-                    <li><a href="mailto:cultura@itanhaem.sp.gov.br" class="hover:text-white transition"><i class="fas fa-envelope mr-2 text-yellow-500"></i> cultura@itanhaem.sp.gov.br</a></li>
+                    <li><i class="fas fa-map-marker-alt mr-2 text-yellow-500"></i> Rua Antônio Olívio de Araújo, 5 - Centro</li>
+                    <li><i class="fas fa-phone mr-2 text-yellow-500"></i> (13) 3427-5573</li>
                 </ul>
             </div>
-        </div>
-        <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300 text-sm">
-            <p>&copy; 2026 Prefeitura Municipal de Itanhaém.</p>
         </div>
     </footer>
 
@@ -235,14 +207,8 @@
         document.querySelectorAll('.mobile-dropdown-btn').forEach(function(btn) {
             btn.addEventListener('click', function() {
                 const menu = this.nextElementSibling;
-                const icon = this.querySelector('.mobile-dropdown-icon');
-                const isCurrentlyHidden = menu.classList.contains('hidden');
                 document.querySelectorAll('.mobile-dropdown-menu').forEach(m => m.classList.add('hidden'));
-                document.querySelectorAll('.mobile-dropdown-icon').forEach(i => i.classList.remove('rotate-180'));
-                if (isCurrentlyHidden) {
-                    menu.classList.remove('hidden');
-                    icon.classList.add('rotate-180');
-                }
+                if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); }
             });
         });
 
@@ -250,43 +216,32 @@
             dropdown.addEventListener('click', function(event) {
                 event.stopPropagation();
                 const menu = this.querySelector('.dropdown-menu');
-                const isCurrentlyHidden = menu.classList.contains('hidden');
                 document.querySelectorAll('.dropdown-menu').forEach(m => m.classList.add('hidden'));
-                if (isCurrentlyHidden) { menu.classList.remove('hidden'); }
+                if (menu.classList.contains('hidden')) { menu.classList.remove('hidden'); }
             });
         });
-        document.addEventListener('click', function() {
-            document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.add('hidden'));
-        });
 
-        // Script do Carrossel do Teatro Eva Wilma
-        const carouselImages = document.querySelectorAll('#teatro-carousel .carousel-image');
+        // Script do Carrossel da Biblioteca
+        const carouselImages = document.querySelectorAll('#biblioteca-carousel .carousel-image');
         const prevBtn = document.getElementById('prev-slide');
         const nextBtn = document.getElementById('next-slide');
         
         if (carouselImages.length > 0) {
             let currentImageIndex = 0;
             let carouselInterval;
-
             const changeSlide = (newIndex) => {
                 carouselImages[currentImageIndex].classList.remove('opacity-100');
                 carouselImages[currentImageIndex].classList.add('opacity-0');
-
                 currentImageIndex = newIndex;
-
                 if (currentImageIndex >= carouselImages.length) currentImageIndex = 0;
                 if (currentImageIndex < 0) currentImageIndex = carouselImages.length - 1;
-
                 carouselImages[currentImageIndex].classList.remove('opacity-0');
                 carouselImages[currentImageIndex].classList.add('opacity-100');
             };
-
             const startCarousel = () => { carouselInterval = setInterval(() => changeSlide(currentImageIndex + 1), 5000); };
             const resetCarousel = () => { clearInterval(carouselInterval); startCarousel(); };
-
             prevBtn.addEventListener('click', () => { changeSlide(currentImageIndex - 1); resetCarousel(); });
             nextBtn.addEventListener('click', () => { changeSlide(currentImageIndex + 1); resetCarousel(); });
-
             startCarousel();
         }
     </script>
