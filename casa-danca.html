@@ -130,38 +130,68 @@
         </div>
 
         <div class="container mx-auto px-4 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 font-heading">Estrutura e Modalidades</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Inaugurada em abril de 2023, a Casa da Dança é uma conquista histórica para o setor cultural. O espaço conta com infraestrutura profissional, incluindo piso flutuante, espelhos e barras, proporcionando o ambiente ideal para o aprendizado e a prática da dança. É também a casa do <strong>Corpo de Baile Jovem de Itanhaém</strong>.
-                    </p>
-                    
-                    <div class="bg-pink-50 p-6 rounded-2xl border border-pink-100 mb-6">
-                        <h4 class="font-bold text-pink-900 mb-3"><i class="fas fa-star mr-2"></i> Oficinas Gratuitas</h4>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
-                            <li>• Ballet Clássico (Baby ao Adulto)</li>
-                            <li>• Jazz Dance</li>
-                            <li>• Dança Contemporânea</li>
-                            <li>• Danças Urbanas</li>
-                            <li>• Ballet +40</li>
-                        </ul>
+            <div class="bg-white/80 backdrop-blur-md border border-white/40 rounded-3xl shadow-xl shadow-blue-900/5 overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <!-- Carrossel Dinâmico -->
+                    <div class="md:w-1/2 h-64 sm:h-80 md:h-auto min-h-[300px] sm:min-h-[400px] relative overflow-hidden group">
+                        <div id="danca-carousel" class="absolute inset-0 w-full h-full z-0">
+                            <img src="casa_dança1.webp" alt="Casa da Dança 1" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                            <img src="casa_dança2.webp" alt="Casa da Dança 2" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança3.webp" alt="Casa da Dança 3" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança4.webp" alt="Casa da Dança 4" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança5.webp" alt="Casa da Dança 5" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança6.webp" alt="Casa da Dança 6" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança7.webp" alt="Casa da Dança 7" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança8.webp" alt="Casa da Dança 8" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança9.webp" alt="Casa da Dança 9" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            <img src="casa_dança10.webp" alt="Casa da Dança 10" class="carousel-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0" loading="lazy">
+                            
+                            <!-- Degradê e Controles Manuais -->
+                            <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none"></div>
+
+                            <button id="prev-slide-danca" class="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 focus:outline-none backdrop-blur-sm" aria-label="Foto Anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button id="next-slide-danca" class="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 bg-black/40 hover:bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 z-20 focus:outline-none backdrop-blur-sm" aria-label="Próxima Foto">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                            <!-- Indicadores do Carrossel (Bolinhas) -->
+                            <div id="danca-indicators" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-1.5 sm:space-x-2 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mb-4 text-gray-700">
-                        <p class="mb-2"><strong>Coordenadora:</strong> Lenisa</p>
-                        <a href="tel:1334223000" class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-lg font-bold hover:bg-green-200 transition">
-                            <i class="fas fa-phone-alt mr-2"></i> (13) 3422-3000
-                        </a>
-                    </div>
+                    <!-- Conteúdo Descritivo -->
+                    <div class="md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-900 mb-6 font-heading">Estrutura e Modalidades</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Inaugurada em abril de 2023, a Casa da Dança é uma conquista histórica para o setor cultural. O espaço conta com infraestrutura profissional, incluindo piso flutuante, espelhos e barras, proporcionando o ambiente ideal para o aprendizado e a prática da dança. É também a casa do <strong>Corpo de Baile Jovem de Itanhaém</strong>.
+                        </p>
+                        
+                        <div class="bg-pink-50 p-6 rounded-2xl border border-pink-100 mb-6">
+                            <h4 class="font-bold text-pink-900 mb-3"><i class="fas fa-star mr-2"></i> Oficinas Gratuitas</h4>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700">
+                                <li>• Ballet Clássico (Baby ao Adulto)</li>
+                                <li>• Jazz Dance</li>
+                                <li>• Dança Contemporânea</li>
+                                <li>• Danças Urbanas</li>
+                                <li>• Ballet +40</li>
+                            </ul>
+                        </div>
 
-                    <div class="flex items-center text-gray-600">
-                        <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
-                        <span><strong>Endereço:</strong> Av. Harry Forssell, 928 - Belas Artes (Centro das Artes)</span>
+                        <div class="mb-4 text-gray-700">
+                            <p class="mb-2"><strong>Coordenadora:</strong> Lenisa</p>
+                            <a href="tel:1334223000" class="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-lg font-bold hover:bg-green-200 transition">
+                                <i class="fas fa-phone-alt mr-2"></i> (13) 3422-3000
+                            </a>
+                        </div>
+
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-map-marker-alt text-red-500 mr-3 text-xl"></i>
+                            <span><strong>Endereço:</strong> Av. Harry Forssell, 928 - Belas Artes (Centro das Artes)</span>
+                        </div>
                     </div>
-                </div>
-                <div class="order-1 md:order-2">
-                    <img src="casa_dança.webp" onerror="this.src='https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3'" class="rounded-3xl shadow-2xl w-full h-auto object-cover">
                 </div>
             </div>
         </div>
@@ -239,6 +269,65 @@
         document.addEventListener('click', function() {
             document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.add('hidden'));
         });
+
+        // Script do Carrossel da Casa da Dança
+        const carouselImages = document.querySelectorAll('#danca-carousel .carousel-image');
+        const prevBtn = document.getElementById('prev-slide-danca');
+        const nextBtn = document.getElementById('next-slide-danca');
+        const indicatorsContainer = document.getElementById('danca-indicators');
+        
+        if (carouselImages.length > 0) {
+            let currentImageIndex = 0;
+            let carouselInterval;
+
+            // Criar os indicadores interativos dinamicamente
+            carouselImages.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = `h-2 sm:h-2.5 rounded-full transition-all duration-300 ${index === 0 ? 'bg-white w-5 sm:w-6' : 'bg-white/50 w-2 sm:w-2.5 hover:bg-white/80'}`;
+                dot.setAttribute('aria-label', `Ir para a foto ${index + 1}`);
+                dot.addEventListener('click', () => {
+                    changeSlide(index);
+                    resetCarousel();
+                });
+                indicatorsContainer.appendChild(dot);
+            });
+            const indicators = indicatorsContainer.querySelectorAll('button');
+
+            const updateIndicators = (newIndex) => {
+                indicators.forEach((dot, index) => {
+                    if (index === newIndex) {
+                        dot.className = 'h-2 sm:h-2.5 rounded-full transition-all duration-300 bg-white w-5 sm:w-6';
+                    } else {
+                        dot.className = 'h-2 sm:h-2.5 rounded-full transition-all duration-300 bg-white/50 hover:bg-white/80 w-2 sm:w-2.5';
+                    }
+                });
+            };
+
+            const changeSlide = (newIndex) => {
+                carouselImages[currentImageIndex].classList.remove('opacity-100');
+                carouselImages[currentImageIndex].classList.add('opacity-0');
+
+                currentImageIndex = newIndex;
+
+                if (currentImageIndex >= carouselImages.length) currentImageIndex = 0;
+                if (currentImageIndex < 0) currentImageIndex = carouselImages.length - 1;
+
+                carouselImages[currentImageIndex].classList.remove('opacity-0');
+                carouselImages[currentImageIndex].classList.add('opacity-100');
+                
+                updateIndicators(currentImageIndex);
+            };
+
+            const startCarousel = () => { carouselInterval = setInterval(() => changeSlide(currentImageIndex + 1), 5000); };
+            const resetCarousel = () => { clearInterval(carouselInterval); startCarousel(); };
+
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => { changeSlide(currentImageIndex - 1); resetCarousel(); });
+                nextBtn.addEventListener('click', () => { changeSlide(currentImageIndex + 1); resetCarousel(); });
+            }
+
+            startCarousel();
+        }
     </script>
 </body>
 </html>
